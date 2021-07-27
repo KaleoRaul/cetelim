@@ -16,7 +16,10 @@ export class AccountSetup extends Component {
 
         return (
             <div className="form-container">
-            <img className="logo" src={logo} width="120"/>
+                            <div className="text-center container">
+
+            <img className="logo" src={logo} width="150"/>
+            </div>
                 <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefour Drogaria</b></h6>
                 <div className="form-group">
                     

