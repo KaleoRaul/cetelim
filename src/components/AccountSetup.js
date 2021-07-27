@@ -7,6 +7,7 @@ import InputMask from "react-input-mask";
 export class AccountSetup extends Component {
     continue = e => {
         e.preventDefault();
+        
         this.props.nextStep();
     };
     
@@ -23,7 +24,7 @@ export class AccountSetup extends Component {
                 <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefour Drogaria</b></h6>
                 <div className="form-group">
                     
-                    <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}   />
+                    <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required  />
                 </div>
                 <div className="form-group">
                     <input placeholder="Seu email" type="email" className="form-control" name="email" onChange={inputChange('email')} value={values.email} />

