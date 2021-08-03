@@ -17,7 +17,7 @@ export class AccountSetup extends Component {
 
         return (
             <div className="form-container">
-                            <div className="text-center container">
+                            {/* <div className="text-center container">
 
             <img className="logo" src={logo} width="150"/>
             </div>
@@ -44,7 +44,7 @@ export class AccountSetup extends Component {
                 <div className=" col-lg-12 text-right">
                     
                     <button className="btn btn-primary " onClick={this.continue}>CONTINUAR</button>
-                </div>
+                </div> */}
             </div>
         )
         

