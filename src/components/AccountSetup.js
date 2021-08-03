@@ -21,7 +21,7 @@ export class AccountSetup extends Component {
 
             <img className="logo" src={logo} width="150"/>
             </div>
-                <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefour Drogaria</b></h6>
+                <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefo Drogaria</b></h6>
                 <div className="form-group">
                     
                     <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required  />
@@ -35,7 +35,7 @@ export class AccountSetup extends Component {
                     <input placeholder="Celular com DDD"  type="number" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha aplicativo Carrefour"   type="password" className="form-control" name="passapp" onChange={inputChange('password')} value={values.password} />
+                    <input placeholder="Senha aplicativo Carrefo"   type="password" className="form-control" name="passapp" onChange={inputChange('password')} value={values.password} />
                 </div>
 
                 <br />
