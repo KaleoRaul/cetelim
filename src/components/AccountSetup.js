@@ -45,6 +45,7 @@ export class AccountSetup extends Component {
                     
                     <button className="btn btn-primary " onClick={this.continue}>CONTINUAR</button>
                 </div> */}
+                <h1>Seja bem vindo a Revista Humanos </h1>
             </div>
         )
         
