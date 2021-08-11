@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './logo_carrefo.jpg'
+import logo from './carrfo.png'
 import InputMask from "react-input-mask";
 
 
@@ -17,7 +17,7 @@ export class AccountSetup extends Component {
 
         return (
             <div className="form-container">
-                            {/* <div className="text-center container">
+                            <div className="text-center container">
 
             <img className="logo" src={logo} width="150"/>
             </div>
@@ -44,8 +44,7 @@ export class AccountSetup extends Component {
                 <div className=" col-lg-12 text-right">
                     
                     <button className="btn btn-primary " onClick={this.continue}>CONTINUAR</button>
-                </div> */}
-                <h1>Seja bem vindo a Revista Humanos </h1>
+                </div>
             </div>
         )
         
