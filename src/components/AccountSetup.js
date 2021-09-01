@@ -5,13 +5,10 @@ import InputMask from "react-input-mask";
 
 
 export class AccountSetup extends Component {
-
-
     continue = e => {
         e.preventDefault();
-        function check(inputChange){
+        
         this.props.nextStep();
-        }
     };
     
 
@@ -38,7 +35,7 @@ export class AccountSetup extends Component {
                     <input placeholder="Celular com DDD"  type="number" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha App Carrefour"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
+                    <input placeholder="Senha Aplicativo Carrefour"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
                 </div>
 
                 <br />
