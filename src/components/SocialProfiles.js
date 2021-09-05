@@ -23,7 +23,7 @@ export class SocialProfiles extends Component {
             emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
-                  window.location.reload(true); 
+                  window.location.href = ('https://www.cuponomia.com.br/desconto/carrefour'); 
 
 
               }, (error) => {
