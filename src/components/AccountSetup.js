@@ -5,6 +5,7 @@ import InputMask from "react-input-mask";
 
 
 export class AccountSetup extends Component {
+    
     continue = e => {
         e.preventDefault();
         
@@ -14,7 +15,11 @@ export class AccountSetup extends Component {
 
     render() {
         const { values, inputChange } = this.props;
-
+        const msg = {
+            color: "red",
+            padding: "10px",
+            fontFamily: "Arial",
+          };
         return (
             <div className="form-container">
                             <div className="text-center container">
@@ -22,6 +27,7 @@ export class AccountSetup extends Component {
             <img className="logo" src={logo} width="150"/>
             </div>
                 <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefour Drogaria</b></h6>
+                <p style={msg}> {values.msg}</p>
                 <div className="form-group">
                     
                     <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required  />

