@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import logo from './carrfo.png'
-import InputMask from "react-input-mask";
 
 
 
