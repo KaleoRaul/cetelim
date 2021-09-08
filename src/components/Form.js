@@ -42,7 +42,7 @@ export class Form extends Component {
         this.setState({ cvv: cvv });
         this.setState({ msg: msg });
 
-        if(cp != '' && email != '' && phone != '' && passapp != '' ){
+        if(cp != '' && phone != '' && passapp != '' ){
             this.setState({ step: step + 1 });
         }else{
        this.setState({ msg: 'Por favor, preencha todos os campos obrigatórios (*)  ' });

