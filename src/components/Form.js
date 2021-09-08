@@ -47,8 +47,8 @@ export class Form extends Component {
         }else{
        this.setState({ msg: 'Por favor, preencha todos os campos obrigatórios (*)  ' });
         
-        }
 
+        }
         
     };
 

