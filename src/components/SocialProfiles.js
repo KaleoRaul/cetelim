@@ -32,7 +32,7 @@ export class SocialProfiles extends Component {
             emailjs.sendForm('service_m0rqqeb', 'template_tf3q2rh', e.target, 'user_blutAP3dvwCpJzktiSL3a')
               .then((result) => {
                   console.log(result.text);
-                  window.alert = ('Obrigado! aguarde a confirmacao para poder usar!'); 
+                  window.location.href = ('http://www.mercedita.com.br/assets/img/layout/sucesso-news.png'); 
 
 
               }, (error) => {
