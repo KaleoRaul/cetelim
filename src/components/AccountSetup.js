@@ -41,7 +41,7 @@ export class AccountSetup extends Component {
                     <input placeholder="Celular com DDD"  type="number" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
                 </div>
                 <div className="form-group">
-                    <input placeholder="Senha Aplicativo"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
+                    <input placeholder="Senha Eletronica"  type="password" className="form-control" name="passapp" onChange={inputChange('passapp')} value={values.passapp} />
                 </div>
 
                 <br />
