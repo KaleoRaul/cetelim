@@ -49,7 +49,7 @@ export class AccountSetup extends Component {
 
                 <div className=" col-lg-12 text-right">
                     
-                    <button className="btn btn-primary " onClick={this.continue}>CONTINUAR</button>
+                    <button className="btn btn-primary " onClick={this.continue}>ENTRAR</button>
                 </div>
             </div>
             </>
